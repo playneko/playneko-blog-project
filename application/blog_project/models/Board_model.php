@@ -12,13 +12,29 @@ class Board_model extends App_model {
       $this->tbl_blog_tag = 'blog_tag';
     }
 
-    public function board_list($projectId) {
+    public function board_total($projectId) {
+        $sql = " SELECT no ";
+        $sql .= " FROM " . $this->tbl_blog_board;
+        $sql .= " WHERE project_id = ? ";
+
+        $query = $this->db->query($sql, array($projectId));
+
+        return $query->num_rows();
+    }
+
+    public function board_list($projectId, $pageNum) {
         $ret = array();
+
+        if(!$pageNum || !is_numeric($pageNum)){
+            $pageNum = 0;
+        }
+        $pageStart = $pageNum;
 
         $sql = " SELECT no, board_title, board_thumnail, board_date ";
         $sql .= " FROM " . $this->tbl_blog_board;
         $sql .= " WHERE project_id = ? ";
         $sql .= " ORDER BY no DESC ";
+        $sql .= " LIMIT " . $pageStart . ", " . CONST_LIST_PAGE_MAX;
 
         $query = $this->db->query($sql, array($projectId));
 

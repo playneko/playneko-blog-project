@@ -13,16 +13,52 @@ class Board extends Application {
 
 		$this->load->helper('text');
 		$this->load->model('board_model');
+        $this->load->library('pagination');
 
 		$this->projectInfo = $this->projectInfo();
         $this->projectId = $this->sessionInfo()['project_id'];
 		$this->headerArr = array('projectInfo' => $this->projectInfo, 'page' => 'board');
 	}
 
+	private function paging() {
+        $config['base_url']       = CONST_SITE_DIR."project/board/";
+        $config['total_rows']     = $this->board_model->board_total($this->projectId);
+        $config['per_page']       = CONST_LIST_PAGE_MAX;
+        $config["num_links"]      = 5;
+
+        $config['prev_tag_open']  = '<li class="page-item page-link">';
+        $config["prev_link"]      = '<';
+        $config['prev_tag_close'] = '</li>';
+
+        $config['cur_tag_open']   = '<li class="page-item active"><a href="#" class="page-link">';
+        $config['cur_tag_close']  = '</a></li>';
+
+        $config['num_tag_open']   = '<li class="page-item page-link">';
+        $config['num_tag_close']  = '</li>';
+
+        $config['next_tag_open']  = '<li class="page-item page-link">';
+        $config["next_link"]      = '>';
+        $config['next_tag_close'] = '</li>';
+
+        $config['first_tag_open']  = '<li class="page-item page-link">';
+        $config["first_link"]      = '처음';
+        $config['first_tag_close'] = '</li>';
+
+        $config['last_tag_open']  = '<li class="page-item page-link">';
+        $config["last_link"]      = '마지막';
+        $config['last_tag_close'] = '</li>';
+
+		$this->pagination->initialize($config);
+	}
+
 	public function board() {
+		$this->paging();
+
 		$dataArr = array (
-			'dataList' => $this->board_model->board_list($this->projectId)
+            'pageing' => $this->pagination->create_links(),
+			'dataList' => $this->board_model->board_list($this->projectId, $this->getUrlDataNo())
 		);
+
 		$this->render('board/index.php', $this->headerArr, $dataArr);
 	}
 

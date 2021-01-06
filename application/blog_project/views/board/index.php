@@ -39,6 +39,11 @@
             </tbody>
             </table>
         </div>
+        <div class="load-more" style="float: left;">
+            <ul class="pagination light">
+                <?=str_ireplace("<a", "<a rel='external'", $pageing)?>
+            </ul>
+        </div>
         <small class="d-block text-right">
             <button class="btn btn-secondary js-link-href" type="button" data-input-href="<?=CONST_DEFAULT_DIR?>project/board/add"><i class="fa fa-plus-circle"></i> 추가</button>
         </small>

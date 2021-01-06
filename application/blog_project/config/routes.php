@@ -69,6 +69,7 @@ $route['project/register'] = "project/register";
 
 // ブログ管理
 $route['project/board'] = "board/board";
+$route['project/board/(:any)'] = "board/board";
 $route['project/board/add'] = "board/board_add";
 $route['project/board/modify'] = "board/board_modify";
 $route['project/board/modify/(:any)'] = "board/board_modify";

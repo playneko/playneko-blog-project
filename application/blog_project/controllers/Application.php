@@ -74,7 +74,7 @@ class Application extends CI_Controller {
     
     public function getUrlDataNo() {
         $segs = $this->uri->segment_array();
-        return $segs[count($segs)];
+        return is_numeric($segs[count($segs)]) ? $segs[count($segs)] : 0;
     }
     
     public function getUrlDataNoSel($num) {

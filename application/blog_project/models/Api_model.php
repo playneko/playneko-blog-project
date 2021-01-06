@@ -1,6 +1,8 @@
 <?php  if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class Api_model extends CI_Model {
+require_once 'App_model.php';
+
+class Api_model extends App_model {
     
     public function __construct() {
         parent::__construct();
@@ -90,7 +92,7 @@ class Api_model extends CI_Model {
                 $sql .= " AND board.is_del = 0 ";
             }
 
-            $sql .= " ORDER BY no DESC ";
+            $sql .= " ORDER BY board.board_date DESC ";
             $sql .= " LIMIT ".$pageStart.", ".$pageEnd;
 
             $query = $this->db->query($sql, array($projectId));
@@ -110,7 +112,7 @@ class Api_model extends CI_Model {
                     $ret['list'][] = array(
                         'no' => $data['no'],
                         'board_title' => $data['board_title'],
-                        'board_comment' => $data['board_comment'],
+                        'board_comment' => $this->nl2br3($data['board_comment']),
                         'board_thumnail' => $data['board_thumnail'],
                         'board_date' => date('Y/m/d H:i', strtotime($data['board_date']))
                     );
@@ -159,7 +161,7 @@ class Api_model extends CI_Model {
                     $ret['detail'][] = array(
                         'no' => $data['no'],
                         'board_title' => $data['board_title'],
-                        'board_article' => $data['board_article'],
+                        'board_article' => $this->nl2br3($data['board_article']),
                         'cat_name' => $catNameArr,
                         'tag_name' => $tagNameArr,
                         'board_date' => date('Y/m/d H:i', strtotime($data['board_date']))
