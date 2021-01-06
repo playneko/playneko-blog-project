@@ -1,0 +1,296 @@
+table > thead> tr > th {
+    text-align: center;
+}
+
+table > thead> tr > th:first-child {
+    width: 5%;
+    text-align: left;
+}
+
+.text-align_left {
+    text-align: left;
+}
+
+.text-align_right {
+    text-align: right;
+}
+
+.text-align_center {
+    text-align: center;
+}
+
+.text-message_alert {
+    font-size: .925rem;
+    color: #ff756b;
+}
+
+.js-link-href {
+    cursor: pointer;
+}
+
+.table_no_margin {
+    margin-bottom: 0 !important;
+}
+
+th, td {
+    vertical-align: middle !important;
+    border-bottom: 1px solid #dee2e6 !important;
+}
+
+.accordion-group {
+    padding: 5px !important;
+    margin-bottom: 0px !important;
+    background-color: #f9fafb !important;
+}
+
+.accordion-group_list {
+    padding-left: 20px;
+    line-height: 1;
+    font-size: .875rem;
+    color: #6c757d;
+}
+
+.btn-accordion {
+    font-size: 0.9rem;
+    line-height: 1.1;
+    color: #6c757d;
+}
+
+.padding_all_10px {
+    padding: 10px !important;
+}
+
+.padding_top_5px {
+    padding-top: 5px !important;
+}
+
+.padding_top_10px {
+    padding-top: 10px !important;
+}
+
+.padding_bottom_5px {
+    padding-bottom: 5px !important;
+}
+
+.padding_bottom_10px {
+    padding-bottom: 10px !important;
+}
+
+.margin_top_5px {
+    margin-top: 5px !important;
+}
+
+.link-font_size {
+    font-size: .8rem !important;
+}
+
+.btn-link_red {
+    font-weight: 400 !important;
+    color: #ff3355 !important;
+    text-decoration: none !important;
+}
+
+.div-overflow_x {
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.div-overflow_y {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.div-overflow_box {
+    /* width: 100%;
+    height: 250px;
+    padding: 15px;
+    border-radius: .25rem;
+    border: 1px solid #ced4da; */
+    /* display: table; */
+    width: 100%;
+}
+
+.div-overflow_box_middle {
+    width: 110px;
+    padding-top: 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.div-image_card {
+    width: 206px;
+    flex: none !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    margin-bottom: 15px !important;
+}
+
+.div-image_size {
+    width: 166px !important;
+    /* min-width: 252px !important; */
+}
+
+.div-image_size2 {
+    width: 166px !important;
+    margin-bottom: 10px;
+}
+
+.div-image_footer {
+    padding: .1rem 1.25rem !important;
+}
+
+.card-market_sale_font_size {
+    font-size: 0.9rem !important;
+}
+
+.card-market_text_font_size {
+    font-size: 0.8rem !important;
+    white-space: initial;
+}
+
+.collapse_button {
+    margin-top: 10px;
+    font-size: 9pt;
+    white-space: initial;
+}
+
+.js-select_banker {
+    display: none;
+}
+
+div.nav_scroller {
+    position: fixed;
+    width: 100%;
+}
+
+.div_header_background_4fc3f7 {
+    background: #4FC3F7;
+}
+
+.div_header_title {
+    color: #ffffff !important;
+    font-weight: normal !important;
+}
+
+.div_top_line {
+    border-top: 1px solid #dee2e6 !important;
+}
+
+.div_padding_right_10px {
+    padding-right: 10px;
+}
+
+nav.nav_scroller {
+    margin-top: 60px;
+}
+
+main.container {
+    margin-top: 70px;
+}
+
+.container_margin_top_75px {
+    margin-top: 75px;
+}
+
+.container_margin_bottom_25px {
+    margin-bottom: 25px;
+}
+
+.container_center_auto {
+    margin: 0 auto;
+}
+
+.panel_link {
+    color: #696969 !important;
+    font-weight: normal !important;
+}
+
+.panel_top_55px {
+    margin-top: 55px;
+}
+
+.panel_line_height_40px {
+    line-height: 40px;
+}
+
+.panel_menu_font_size_11pt > li {
+    font-size: 11pt;
+}
+
+.panel_menu_width_30px > li > span {
+    width: 30px;
+}
+
+.panel_menu_width_30px > li > span {
+    width: 30px;
+}
+
+.panel_menu_right_10px > li > span {
+    padding-right: 10px;
+}
+
+.thumbnail {
+    width: 247px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.thumbnail img {
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.thumbnail img.portrait {
+    width: 100%;
+    height: auto;
+}
+
+.imageblock img {
+    max-width: 600px;
+    height: auto;
+}
+
+.container_margin_top_10px {
+    margin-top: 10px;
+}
+
+.div_left {
+    width: 50%;
+    float: left;
+    overflow: scroll;
+    margin-top: 54px;
+}
+
+.div_right {
+    width: 50%;
+    overflow: scroll;
+    margin-top: 54px;
+}
+
+.sanretu-caption-1gyou, .sanretu-caption-2gyou, .sanretu-caption-3gyou,
+.sanretu-caption-1gyou-in1, .sanretu-caption-2gyou-in1, .sanretu-caption-3gyou-in1,
+.sanretu-caption-3gyou-in2, .sanretu-caption-3gyou-in3 {
+    float: left;
+    width: 160px;
+    font-size: 13px;
+    padding-left: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+.deka-caption {
+    padding: 5px;
+    font-size: 14px;
+    max-width: 500px;
+    margin-left: 5px;
+    background-color: #eeeeee;
+}
