@@ -216,10 +216,10 @@
         </div>
         <small class="d-block text-right mt-3">
             <button class="btn btn-secondary js-submit-board" type="button"
-                data-format-target="<?=CONST_DEFAULT_DIR?>project/board/modify"
+                data-format-target="<?=CONST_DEFAULT_DIR?>project/board/write/modify"
                 data-target-return="<?=CONST_DEFAULT_DIR?>project/board"><i class="fa fa-check-circle"></i> 저장</button>
             <button class="btn btn-danger js-submit-board" type="button"
-                data-format-target="<?=CONST_DEFAULT_DIR?>project/board/delete"
+                data-format-target="<?=CONST_DEFAULT_DIR?>project/board/write/delete"
                 data-target-return="<?=CONST_DEFAULT_DIR?>project/board"><i class="fa fa-times-circle"></i> 삭제</button>
         </small>
     </form>

@@ -70,9 +70,9 @@ $route['project/register'] = "project/register";
 // ブログ管理
 $route['project/board'] = "board/board";
 $route['project/board/(:any)'] = "board/board";
-$route['project/board/add'] = "board/board_add";
-$route['project/board/modify'] = "board/board_modify";
-$route['project/board/modify/(:any)'] = "board/board_modify";
-$route['project/board/delete'] = "board/board_delete";
+$route['project/board/write/add'] = "board/board_add";
+$route['project/board/write/modify'] = "board/board_modify";
+$route['project/board/write/modify/(:any)'] = "board/board_modify";
+$route['project/board/write/delete'] = "board/board_delete";
 
 $route['project/logincheck'] = "administrator/logincheck";

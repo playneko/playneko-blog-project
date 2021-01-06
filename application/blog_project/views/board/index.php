@@ -26,7 +26,7 @@
             ?>
                         <tr>
                             <th scope="row"><?=$value['no']?></th>
-                            <td class="js-link-href" data-input-href="<?=CONST_DEFAULT_DIR?>project/board/modify/<?=$value['no']?>">
+                            <td class="js-link-href" data-input-href="<?=CONST_DEFAULT_DIR?>project/board/write/modify/<?=$value['no']?>">
                                 <img src="<?=$value['board_thumnail']?>" width="100">
                             </td>
                             <td><?=$value['board_title']?></td>
@@ -45,7 +45,7 @@
             </ul>
         </div>
         <small class="d-block text-right">
-            <button class="btn btn-secondary js-link-href" type="button" data-input-href="<?=CONST_DEFAULT_DIR?>project/board/add"><i class="fa fa-plus-circle"></i> 추가</button>
+            <button class="btn btn-secondary js-link-href" type="button" data-input-href="<?=CONST_DEFAULT_DIR?>project/board/write/add"><i class="fa fa-plus-circle"></i> 추가</button>
         </small>
     </div>
 </main>

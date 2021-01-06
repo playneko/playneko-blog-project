@@ -212,7 +212,7 @@
         </div>
         <small class="d-block text-right mt-3">
             <button class="btn btn-secondary js-submit-board" type="button"
-                data-format-target="<?=CONST_DEFAULT_DIR?>project/board/add"
+                data-format-target="<?=CONST_DEFAULT_DIR?>project/board/write/add"
                 data-target-return="<?=CONST_DEFAULT_DIR?>project/board"><i class="fa fa-check-circle"></i> 저장</button>
         </small>
     </form>
