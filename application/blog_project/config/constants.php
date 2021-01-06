@@ -96,8 +96,6 @@ define('CONST_SITE_URL', 'https://'.$_SERVER['HTTP_HOST']);
 define('CONST_ASSETS_DIR', 'https://'.$_SERVER['HTTP_HOST'].'/assets/project/');
 define('CONST_MEMBER_REGISTER_URL', 'https://'.$_SERVER['HTTP_HOST'].'/');
 
-define('CONST_LIST_PAGE_MAX', 12);
-
 define('CONST_ERROR_CODE_001', 'E001');
 define('CONST_ERROR_CODE_002', 'E002');
 define('CONST_ERROR_CODE_003', 'E003');
@@ -114,3 +112,8 @@ define('CONST_HEADER_IGNORE', serialize (array('history', 'administrator', 'sett
 // 개행처리
 define('CONST_NL2BR', '\r\n');
 define('CONST_NF2BR', '\n');
+
+define('CONST_LIST_PAGE_MAX', 8);
+define('CONST_PAGE_MAX', 5);
+
+define('CONST_CATEGORY_PAGE', serialize (array(1 => 'Rasberry Pi', 2 => 'Python', 3 => 'PHP', 4 => 'Java', 5 => 'Linux', 6 => 'JavaScript', 7 => '아키바 정보', 8 => 'micro:bit', 9 => '챗봇(ChatBot)')));

@@ -73,8 +73,8 @@ class Api extends Application {
 			}
 		}
 
-		$cnt = $this->api_model->getAllTotal($catquery, $keyword);
-		$paging = $this->getPaging($projectId, $cnt['cnt'], $thispage < 1 ? 1 : $thispage, $limitpage);
+		$cnt = $this->api_model->getAllTotal($projectId, $catquery, $keyword);
+		$paging = $this->getPaging($cnt['cnt'], $thispage < 1 ? 1 : $thispage, $limitpage);
 		$ret = $this->api_model->getPage($projectId, $paging['thispage'], $limitpage, $catquery, $keyword);
 
 		$ret['paging'] = $paging;

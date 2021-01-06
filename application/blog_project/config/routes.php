@@ -54,8 +54,8 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 // API
-$route['api/blog/category'] = "Api/category_list";
-$route['api/blog/detail'] = "Api/detail_page";
+$route['api/blog/category'] = "api/category_list";
+$route['api/blog/detail'] = "api/detail_page";
 
 // 各メインページ
 $route['project'] = "project/index";
